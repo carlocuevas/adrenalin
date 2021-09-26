@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+  height: 460px;
+  background: #3852F7;
+  margin: 0; 
+  position:relative;
+}
+
+.headerBanner {
+  padding: 63.84px 0px 87.57px 0px;
+  display:block;
+}
+
+.headerContainer {
+  padding: 0px 11.5%;
+}
+
+.title {
+  font-size: 68px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.subTitle {
+  width: 630px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.polygonGreen {
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+  border-bottom: 250px solid #00E9AE;
+}
+
+.polygonPurple {
+  border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #8453EF;
+}
+
+.polygonDarkBlue {
+  opacity: 0.2;
+  border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #1C1C1C;
+}
+
+.polygon2 {
+  position: absolute;
+  width: 340.31px;
+  height: 341.13px;
+  left: 969px;
+  top: 125.84px;
+}
+
+.polygon3 {
+  position: absolute;
+  width: 513.62px;
+  height: 514.86px;
+  left: 1079.48px;
+  top: 74px;
+}
+
+.polygon4 {
+  position: absolute;
+  width: 394.51px;
+  height: 395.46px;
+  left: 1379.95px;
+  top: 33.54px;
+}
+
+.polygon5 {
+  position: absolute;
+  width: 150.79px;
+  height: 151.15px;
+  left: -31.79px;
+  top: 240px;
+}
+
+.polygon6 {
+  position: absolute;
+  width: 55.95px;
+  height: 56.09px;
+  left: 474.05px;
+  top: 82px;
+}
+
+
+/*small handset*/
+
+@media only screen and (max-width: 780px) { 
+  .header {
+    height: 292px;
+  }  
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subTitle {
+    width: 210px;
+    font-size: 14px;
+    line-height: 20px;;
+    margin-top: 8px;
+  }
+
+  .headerContainer {
+    padding: 0px 25px;
+  }
+
+  .headerBanner {
+    padding: 28.08px 0px 52.61px 0px;
+  }
+}
