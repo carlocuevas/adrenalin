@@ -6,7 +6,6 @@ export default (req: any, res: any) => {
     res.end("Mountain must be defined")
   } else {
     const found = mountains.filter(({ slug }) => slug === req.query.mountain)
-    console.log(found)
     if (found?.length === 0) {
       res.statusCode === 404;
       res.end(`Mountain ${req.query.name} not found`)

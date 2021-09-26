@@ -9,7 +9,6 @@ import mountains from '../../stubs.json'
 type MountainProps = {}
 
 const getMountain = async (mountain: any) => {
-  console.log(mountain)
   const { data } = await axios.get(`/api/mountain?mountain=${escape(mountain)}`)
   return data
 }

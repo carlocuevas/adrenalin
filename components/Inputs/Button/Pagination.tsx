@@ -19,8 +19,6 @@ const Pagination: React.FC<PaginationProps> = ({ pageCount }) => {
     }
   }
 
-  console.log('pages', pages)
-
   return (
     <div className={styles.pagination}>
       {
