@@ -41,9 +41,3 @@ npm run build
 # or 
 yarn build
 ```
-
-the script will produce a static site folder ```out``` as an Production output of the app, you can also run the app via serve command
-
-```bash 
-serve out
-```
