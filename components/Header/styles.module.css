@@ -4,6 +4,8 @@
   background: #3852F7;
   margin: 0; 
   position:relative;
+  overflow:hidden;
+
 }
 
 .headerBanner {
@@ -115,5 +117,12 @@
 
   .headerBanner {
     padding: 28.08px 0px 52.61px 0px;
+  }
+  .polygon2,
+  .polygon3,
+  .polygon4,
+  .polygon5,
+  .polygon6 {
+    display:none;
   }
 }
