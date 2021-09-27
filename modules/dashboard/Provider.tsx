@@ -34,8 +34,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
 
   useEffect(() => {
     if (sort) {
-      let mountains: []
-      mountains = mountainData && mountainData.sort((a: any, b: any) => {
+      let newMountains: []
+      newMountains = mountainData && mountainData.sort((a: any, b: any) => {
         const first = a.title.toUpperCase()
         const second = b.title.toUpperCase()
         if (first < second) {
@@ -49,10 +49,10 @@ const AppProvider = ({ children }: AppProviderProps) => {
       }) || []
 
       if (sort === 'asc') {
-        mountains.reverse()
+        newMountains: any = newMountains.reverse()
       }
 
-      setMountainData([...mountains])
+      setMountainData([...newMountains])
     }
   }, [sort])
 
