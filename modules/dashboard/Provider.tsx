@@ -30,27 +30,29 @@ const AppProvider = ({ children }: AppProviderProps) => {
   }, [mountains?.data])
 
   useEffect(() => {
-    let mountains: []
-    mountains = mountainData && mountainData.sort((a: any, b: any) => {
-      const first = a.title.toUpperCase()
-      const second = b.title.toUpperCase()
-      if (first < second) {
-        return -1;
-      }
-      if (first > second) {
-        return 1;
+    if (sort) {
+      let mountains: []
+      mountains = mountainData && mountainData.sort((a: any, b: any) => {
+        const first = a.title.toUpperCase()
+        const second = b.title.toUpperCase()
+        if (first < second) {
+          return -1;
+        }
+        if (first > second) {
+          return 1;
+        }
+
+        return 0
+      }) || []
+
+      if (sort === 'asc') {
+        mountains.reverse()
       }
 
-      return 0
-    }) || []
+      console.log('mountains', mountains)
 
-    if (sort === 'desc') {
-      mountains.reverse()
+      setMountainData(mountains)
     }
-    
-    console.log('mountains', mountains)
-    
-    setMountainData(mountains)
   }, [sort])
 
   const value = {
