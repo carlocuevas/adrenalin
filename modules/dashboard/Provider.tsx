@@ -51,7 +51,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
 
       console.log('mountains', mountains)
 
-      setMountainData(mountains)
+      setMountainData([...mountains])
     }
   }, [sort])
 
