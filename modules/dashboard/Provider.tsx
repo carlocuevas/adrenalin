@@ -27,7 +27,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const mountains = useQuery(['get-mountains', search], () => getMountains(search))
   useEffect(() => {
     setMountainData(mountains?.data)
-  }, [])
+  }, [mountains?.data])
 
   useEffect(() => {
     if (sort) {
