@@ -45,7 +45,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
     }) || []
 
     if (sort === 'desc') {
-      setMountainData(mountains.reverse())
+      setMountainData([...mountains.reverse()])
     } else {
       setMountainData(mountains)
     }
