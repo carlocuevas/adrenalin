@@ -41,3 +41,11 @@ npm run build
 # or 
 yarn build
 ```
+
+Second, run the command
+```bash
+npm run start
+# or 
+yarn start
+```
+to run the prod version of the app in serve we need to add some service provider such as nodemon or pm2 to keep the server up and running
