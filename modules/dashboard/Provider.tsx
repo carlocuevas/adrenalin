@@ -24,10 +24,13 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [search, setSearch] = useState<string>("")
   const [sort, setSort] = useState<string>("")
   const [mountainData, setMountainData] = useState<[]>([])
-  const mountains = useQuery(['get-mountains', search], () => getMountains(search), {keepPreviousData: true})
+  const mountains = useQuery(['get-mountains', search], () => getMountains(search), {
+    keepPreviousData: true,
+    refetchOnWindowFocus: false
+  })
   useEffect(() => {
     setMountainData(mountains?.data)
-  }, [mountains?.data])
+  }, [mountains?.data, ])
 
   useEffect(() => {
     if (sort) {
