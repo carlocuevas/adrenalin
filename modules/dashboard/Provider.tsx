@@ -30,7 +30,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   })
   useEffect(() => {
     setMountainData(mountains?.data)
-  }, [mountains?.data, ])
+  }, [mountains?.data])
 
   useEffect(() => {
     if (sort) {
