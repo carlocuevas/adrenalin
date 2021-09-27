@@ -32,8 +32,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
   useEffect(() => {
     let mountains: []
     mountains = mountainData && mountainData.sort((a: any, b: any) => {
-      const first = a.title.toLowerCase()
-      const second = b.title.toLowerCase()
+      const first = a.title.toUpperCase()
+      const second = b.title.toUpperCase()
       if (first < second) {
         return -1;
       }
@@ -47,6 +47,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
     if (sort === 'desc') {
       mountains.reverse()
     }
+    
+    console.log('mountains', mountains)
     
     setMountainData(mountains)
   }, [mountainData, sort])
