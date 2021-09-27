@@ -24,7 +24,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [search, setSearch] = useState<string>("")
   const [sort, setSort] = useState<string>("")
   const [mountainData, setMountainData] = useState<[]>([])
-  const mountains = useQuery(['get-mountains', search], () => getMountains(search))
+  const mountains = useQuery(['get-mountains', search], () => getMountains(search), {keepPreviousData: true})
   useEffect(() => {
     setMountainData(mountains?.data)
   }, [mountains?.data])
@@ -48,8 +48,6 @@ const AppProvider = ({ children }: AppProviderProps) => {
       if (sort === 'asc') {
         mountains.reverse()
       }
-
-      console.log('mountains', mountains)
 
       setMountainData([...mountains])
     }
