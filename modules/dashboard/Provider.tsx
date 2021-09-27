@@ -47,10 +47,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
 
         return 0
       }) || []
-
-      if (sort === 'asc') {
-        newMountains = [...newMountains.reverse()]
-      }
+      
+      sort === 'desc' && newMountains.reverse()
 
       setMountainData([...newMountains])
     }
