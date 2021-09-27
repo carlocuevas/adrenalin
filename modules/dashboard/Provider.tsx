@@ -53,7 +53,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
 
       setMountainData(mountains)
     }
-  }, [sort])
+  }, [mountainData, sort])
 
   const value = {
     search,
