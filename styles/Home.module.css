@@ -72,5 +72,6 @@
 
   .buttonContainer {
     flex-direction: column-reverse;
+    gap: 16px;
   }
 }
