@@ -49,7 +49,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
       }) || []
 
       if (sort === 'asc') {
-        newMountains: any = newMountains.reverse()
+        newMountains = [...newMountains.reverse()]
       }
 
       setMountainData([...newMountains])
