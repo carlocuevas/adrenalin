@@ -118,11 +118,31 @@
   .headerBanner {
     padding: 28.08px 0px 52.61px 0px;
   }
-  .polygon2,
-  .polygon3,
+	
   .polygon4,
-  .polygon5,
-  .polygon6 {
+  .polygon5 {
     display:none;
   }
+	
+  .polygon2 {
+    width: 106.39px;
+    height: 106.64px;
+    left: 240.1px;
+    top: 124px;
+  }
+	
+  .polygon3 {
+    width: 177.92px;
+    height: 178.35px;
+    left: 254.28px;
+    top: 114.65px;
+  }
+	
+  .polygon6 {
+    width: 52.86px;
+    height: 52.99px;
+    left: 228.05px;
+    top: 67px;
+  }
+	
 }
